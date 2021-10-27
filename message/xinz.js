@@ -73,7 +73,7 @@ let nopref = false
 let prefa = 'anjing'
 
 // Mode
-let mode = 'self'
+let mode = 'public'
 
 let {
     ownerNumber,
