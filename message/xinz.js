@@ -73,7 +73,7 @@ let nopref = false
 let prefa = 'anjing'
 
 // Mode
-let mode = 'public'
+let mode = 'self'
 
 let {
     ownerNumber,
@@ -120,8 +120,8 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
         const isPremium = isOwner ? true : _prem.checkPremiumUser(sender, premium)
 	    const isBan = cekBannedUser(sender, ban)
         const isAfkOn = afk.checkAfkUser(sender, _afk)
-        const isAntiLink = isGroup ? antilink.includes(from) : false
-        const isAntiWame = isGroup ? antiwame.includes(from) : false
+        const isAntiLink = isGroup ? antilink.includes(from) : true
+        const isAntiWame = isGroup ? antiwame.includes(from) : true
         const isWelcome = isGroup ? welcome.includes(from) : false
         const isLeft = isGroup ? left.includes(from) : false
         const isNsfw = isGroup ? nsfw.includes(from) : false
