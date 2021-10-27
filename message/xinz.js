@@ -94,7 +94,7 @@ module.exports = async(xinz, msg, blocked, baterai, _afk, welcome, left) => {
 		const command = chats.toLowerCase().split(' ')[0] || ''
 
         if (multi){
-		    var prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '#'
+		    var prefix = /^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/.test(command) ? command.match(/^[°•π÷×¶∆£¢€¥®™✓_=|~!?#$%^&.+-,\/\\©^]/gi) : '!'
         } else {
             if (nopref){
                 prefix = ''
